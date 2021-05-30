@@ -23,10 +23,7 @@ const About = () => {
                         <p style={{ fontFamily: "Bauhaus 93" }}><i className="fa fa-phone"></i> 01701036134</p>
                         <p style={{ fontFamily: "Bauhaus 93" }}><i className="fa fa-phone"></i> 01521255246</p>
                         <p style={{ fontFamily: "Arial" }}><i className="fa fa-map-marker-alt"></i> 220, Bhangnahati, Sreepur, Gazipur</p>
-                        <a target="_blank" href="https://www.facebook.com/staywithmoon"><i class="fab fa-facebook m-2"></i></a>
-                        <a target="_blank" href="https://www.facebook.com/staywithmoon"><i class="fab fa-instagram m-2"></i></a>
-                        <a target="_blank" href="https://www.facebook.com/staywithmoon"><i class="fab fa-linkedin m-2"></i></a>
-                        <a target="_blank" href="https://www.facebook.com/staywithmoon"><i class="fab fa-github m-2"></i></a>
+                        
 
                     </div>
                 </div>
