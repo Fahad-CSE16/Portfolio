@@ -10,6 +10,8 @@ import Navbar from './components/navbar';
 import Contact from './components/contact';
 import Footer from './components/footer';
 import AllTurorials from './components/allTurorials';
+import ProDetails from './components/proDetails';
+
 const routing =(
   <Router>
 
@@ -19,6 +21,7 @@ const routing =(
   <Route  path="/aboutme/" component={Aboutme}/>
   <Route path="/contact/" component={Contact}/>
   <Route path="/tutorials/" component={AllTurorials}/>
+  <Route path="/details/" component={ProDetails}/>
   <Footer/>
   </div>
   </Router>

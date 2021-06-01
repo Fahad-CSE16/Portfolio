@@ -2,7 +2,7 @@ import React from 'react';
 
 const education = () => {
     return (
-        <div className="bg-dark">
+        <div className="bg-dark" id="educations">
             <h2 className=" text-white pt-4"  > Education</h2>
             <div className=" text-white text-left mt-0"   >
                 <div class="card-body">

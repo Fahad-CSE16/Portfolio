@@ -4,7 +4,7 @@ const navbar = () => {
     return (
         
             <div className="navbar menu navbar-dark bg-none mb-5 navbar-expand-md fixed-top"  style={{
-                background: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('1.jpg')",
+                background: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('/media/bg.jpg')",
                 backgroundSize: "cover",
                 backgroundAttachment: "fixed",
                 backgroundPosition: "top",
@@ -21,21 +21,21 @@ const navbar = () => {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto font-weight-bold">
                         <li><a href="/" class="nav-link">Home</a></li>
-                        <li class="nav-item"> <Link className="link" to="/aboutme/" > About </Link></li>
+                        <li class="nav-item"> <Link className="link nav-link" to="/aboutme/" > About </Link></li>
                         <li class="nav-item">
-                            <a href="#services" class="nav-link">Services</a>
+                            <a href="/#Services" class="nav-link">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#blog" class="nav-link">Blog</a>
+                            <a href="/#educations" class="nav-link">Educations</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#photography" class="nav-link">Photography</a>
+                            <a href="/#project" class="nav-link">Projects</a>
                         </li>
-                        <li class="nav-item"> <Link className="link" to="/tutorials/" > Tutorials </Link></li>
+                        <li class="nav-item"> <Link className="link  nav-link" to="/tutorials/" > Tutorials </Link></li>
                         <li class="nav-item">
-                            <a href="#education" class="nav-link">Research &amp; Project</a>
+                            <a href="/#skills" class="nav-link">Skills</a>
                         </li>
-                        <li class="nav-item"> <Link className="link" to="/contact/" > Contact </Link></li>
+                        <li class="nav-item"> <Link className="link nav-link" to="/contact/" > Contact </Link></li>
                     </ul>
                 </div>
             </div>

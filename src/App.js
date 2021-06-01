@@ -10,13 +10,16 @@ import Tutorial from './components/tutorials'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{
+      paddingBottom:"50px"
+      
+  }}>
       
       <About />
       <What />
-      <Skills />
-      <PSKills />
       <Projects />
+      <PSKills />
+      <Skills />
       <Education />
       <Tutorial/>
       

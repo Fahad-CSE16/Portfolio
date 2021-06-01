@@ -1,13 +1,9 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const project = () => {
     return (
-        <div style={{
-          background: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('1.jpg')",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed",
-          backgroundPosition: "top"
-      }} >
+        <div  id="project">
             <h4 className="pt-5 text-white m-0">Project Works</h4>
             <div className="pt-2 text-white text-left " >
                 <ol className="row m-0">
@@ -33,7 +29,11 @@ const project = () => {
                       <p className="text-justify"><b>Description:</b>Admin can add stock, update, make bill dynamically and then in the backend application will auto reduce products from the stock and give alert if any stock becomes empty.</p>
                       <p><b>Tools:</b>Python with Django, HTML5, CSS, Bootstrap4, Vue.js</p>
                       </li></div>
+
                 </ol>
+                <div className="text-center d-block ml-auto">
+                <button className="btn  btn-outline-primary rounded "><Link className="link" to="/details/" > View More </Link></button>
+                </div>
             </div>
         </div>
     );

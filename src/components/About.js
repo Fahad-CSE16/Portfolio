@@ -5,15 +5,12 @@ const About = () => {
     return (
         <div>
             <div className="container-fluid mt-5 " style={{
-                background: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('1.jpg')",
-                backgroundSize: "cover",
-                backgroundAttachment: "fixed",
-                backgroundPosition: "top",
+               
                 fontFamily: "Algerian"
             }}>
                 <div className="row text-left " >
                     <div className="col-md-4 pt-5">
-                        <img src="IM-1.jpg" alt="" className="d-block m-auto Img rounded-circle img-thumbnail " />
+                        <img src="/media/1.jpg" alt="" className="d-block m-auto Img rounded-circle img-thumbnail " />
                     </div>
                     <div className="col text-white">
                         <button className="bt btn-primary"> Hello I'm </button>

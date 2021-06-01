@@ -6,26 +6,30 @@ const aboutme = () => {
 
             <div className="container-fluid">
                 <div className="row text-justify" style={{
-                    background: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('/1.jpg')",
-                    backgroundSize: "cover",
-                    backgroundAttachment: "fixed",
-                    backgroundPosition: "top",
+                    
                     fontFamily: "Arial"
                 }}>
 
                     <div className="col-md-6 text-white mt-5 p-5">
-                        <h3> About Me</h3>
+                        <h3 className="text-center text-outline-info text-success "> About Me</h3>
                         <p>
-                            I am Mahmudul Hasan Moon. A self-reliant person. Studying in Computer Science and Engineering. I have a strong desire to work in various fields of Computer Science. In continuation, I am working on Machine learning, Data science and Computer security.</p> <p>
+                            Hello, I am Md Fahad Hossain. A self-dependent person. I completed my study from HSTU in Computer Science and Engineering. As i want to become a software engineer i am working on differntent technology. And i have gather the knowledge about Django and Django-Rest framework, Git and Github, React.js, Vue.js, Bootstrap4, HTML5, CSS, and Web Scraping</p> <p>
 
-                            I like to do photography and cooking for self satisfaction. Sometimes I write poems, short stories for my own pleasure, and reciting poetry is one of my favorite activities. With a strong desire to teach, I am opening a channel on YouTube and uploading video lectures on various topics in Computer Science and Engineering, as well as writing regular blogs on contemporary issues and technology.</p> <p>
+                            I love to cook for my self satisfaction. I love to outting with friends and pass time with friends. I have any type of Drugs.</p> <p> 
 
-                            This is my website to present all my work to you. If you are interested in my work, you can visit my website and YouTube channel. I hope you like it.Thank you in advance. Stay by my side, keep praying. I want to serve everyone. I would like to give you some special gifts about computer science and engineering. God help everyone. All will be well. God bless you.</p>
+                            Sometime i make video tutorial about several topics for my self satisfaction because i love to teach others about some items in a easy way. I like to publish my video on my youtube channel name <a href="https://www.youtube.com/channel/UCk2uIBpGABdatWhMgKNT_iA" target="_blank" rel="noreferrer" >Tech Solutions in Bangla</a>.</p> <p>
+
+                            One of my bad habit is that, without solving a problem or comepleting  any task i can't be relax.</p> <p>
+
+                            This is my website to present all my work to you. If you are interested in my work, you can visit my website and YouTube channel. I hope you like it.Thank you in advance. Stay by my side, keep praying. </p> <p>
+                            You can contact with me through this website or thorugh facebook or you can email me at any time. Inbox me for my contact no. if you need.
+
+                            </p>
 
 
                     </div>
                     <div className="col-md-4 mt-5 p-5">
-                        <img src="/IM-1.jpg" alt="" className="d-block m-auto Img  img-thumbnail " />
+                        <img src="/media/2.jpg" alt="" className="d-block m-auto Img  img-thumbnail " />
                     </div>
                 </div>
             </div>

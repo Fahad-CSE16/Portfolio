@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const footer = () => {
     return (
@@ -11,15 +13,15 @@ const footer = () => {
             fontFamily: "Blackadder ITC"
         }} >StudyWithFahad</h1>
                         <div class=" mt-3">
-                            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/staywithmoon">
+                            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/fahad.cse16">
                                 <i class="fab mr-2 fa-facebook text-white"></i>
                             </a>
-                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/mahmudul_hasan_moon/" class="text-white">
+                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/md_fahad_hossain/" class="text-white">
                                 <i class="fab mr-2  fa-instagram"></i></a>
-                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mahmudul-hasan-moon-89a049194"> <i class="fab mr-2 fa-linkedin text-white"></i></a>
-                            <a target="_blank" rel="noreferrer" href="https://github.com/Mahmudul-Hasan-Moon" class="text-white"><i class="fab mr-2 fa-github"></i></a>
-                            <a target="_blank" rel="noreferrer" href="https://www.researchgate.net/profile/Mahmudul_Moon"> <i class="fab mr-2 fa-researchgate text-white"></i></a>
-                            <a target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=TRKmJkEAAAAJ&amp;hl=en"><i class="fab  fa-glide text-white"></i></a>
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/fahad-cse16/"> <i class="fab mr-2 fa-linkedin text-white"></i></a>
+                            <a target="_blank" rel="noreferrer" href="https://github.com/Fahad-CSE16" class="text-white"><i class="fab mr-2 fa-github"></i></a>
+                            
+                            
 
                         </div>
                         <ul class="list-group text-center contact-list-group mt-3" style={{listStyle: "none"}}>
@@ -39,9 +41,9 @@ const footer = () => {
             fontFamily: "Freestyle Script",
             // fontFamily: "Brush Script MT",
         }}>At a Glance</h2>
-                        <p><a class="text-white" href="#home">Home</a></p>
-                        <p><a href="#services" class="text-white">My Secrvices</a></p>
-                        <p> <a href="#contact-me" class="text-white">Contact Me</a></p>
+                        <p><a class="text-white" href="/">Home</a></p>
+                        <p><a href="/#Services" class="text-white">My Secrvices</a></p>
+                        <p> <Link className="link text-white" to="/contact/" > Contact Me</Link></p>
                     </div>
                     <div class="col-lg-4 text-center col-md-12 col-sm-12 col-12 text-center col-6 mb-4">
                         <h3 class="mb-4 text-center developed-by overflow-hidden " style={{
@@ -57,14 +59,13 @@ const footer = () => {
                         <span> <i class="fa fa-envelope"></i> &nbsp;
                             mdfahadhossain71@gmail.com</span>
                         <div class="mt-2">
-                            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/developerkamrul">
+                        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/fahad.cse16">
                                 <i class="fab mr-2 fa-facebook text-white"></i>
                             </a>
-
-
-                            <a target="_blank" rel="noreferrer" href=" https://­www.linkedin.com/in/itiskamrul"> <i class="fab mr-2 fa-linkedin text-white"></i></a>
-                            <a target="_blank" rel="noreferrer" href="https://github.com/itiskamrul"> <i class="fab mr-2 text-white fa-github"></i>
-                            </a>
+                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/md_fahad_hossain/" class="text-white">
+                                <i class="fab mr-2  fa-instagram"></i></a>
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/fahad-cse16/"> <i class="fab mr-2 fa-linkedin text-white"></i></a>
+                            <a target="_blank" rel="noreferrer" href="https://github.com/Fahad-CSE16" class="text-white"><i class="fab mr-2 fa-github"></i></a>
 
 
                         </div>
