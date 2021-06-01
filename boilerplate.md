@@ -130,8 +130,12 @@ if not settings.DEBUG:
 ```
 python manage.py runserver
 http://127.0.0.1:8000/
+
 ```
-TO host:
+
+# Host on Heroku Server
+
+```
 
 pip install gunicorn django-heroku dj_database_url python-decouple
 
@@ -143,7 +147,11 @@ web: gunicorn main.wsgi
 
 pip freeze > requirements.txt 
 
-#in settings .py
+```
+
+# Settings.py
+
+```
 
 
 from pathlib import Path
@@ -157,4 +165,21 @@ MIDDLEWARE = [
 STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
 #at last of settings.py
 django_heroku.settings(locals())
+
+```
+
+# On Git bash
+
+```
+$git add .
+$git commit -m ""
+$git push -u origin master
+$heroku login #then cntr+c
+$heroku keys:add #then cntl+c
+$heroku create
+$heroku rename newname
+$git push heroku master
+$heroku run python manage.py migrate
+$heroku run python manage.py createsuperuser
+
 
