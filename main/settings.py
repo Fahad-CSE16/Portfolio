@@ -1,6 +1,9 @@
 
-import os
+
+
 from pathlib import Path
+import os,django_heroku,dj_database_url
+from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'i(1*nul5x1*=_rzjk-jumdbxas8&sl6#-a9&*up0^jw48c_foy'
@@ -32,6 +35,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
 ]
 
 ROOT_URLCONF = 'main.urls'
@@ -93,6 +98,7 @@ MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'build/static'),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 
@@ -103,3 +109,5 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
 ]
 CORS_URLS_REGEX = r'^/api.*'
+django_heroku.settings(locals())
+
