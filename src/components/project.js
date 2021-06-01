@@ -7,7 +7,7 @@ const project = () => {
             <h4 className="pt-5 text-white m-0">Project Works</h4>
             <div className="pt-2 text-white text-left " >
                 <ol className="row m-0">
-                    <div className="col-md-6 py-2 px-5">
+                    <div className="col-md-6 col-sm-12 py-2 ">
 
                     
                     <li>
@@ -16,14 +16,14 @@ const project = () => {
                       <p><b>Tools:</b>Python with Django, HTML5, CSS, Bootstrap4.</p>
                       </li>
                       </div>
-                      <div className="col-md-6 py-2 m-0  px-5">
+                      <div className="col-md-6 py-2 m-0 ">
                     <li>
                       <p><b>Name:</b> <a target="_blank" rel="noreferrer"  href="https://github.com/Fahad-CSE16/SellOrBuy">SellOrBuy</a> </p>
                       <p className="text-justify"><b>Description:</b> People can sell or buy. Buyers can add products to cart and can buy those and Seller can get notification about his product order while buyer confirm order via email. Seller can make product order shipped or arrived and when product is shipped buyer will get notification about this.</p>
                       <p><b>Tools:</b>Python with Django, Vue.js, HTML5, CSS, Bootstrap4.</p>
                       </li>
                       </div>
-                      <div className="col-md-6  py-2  px-5 m-0">
+                      <div className="col-md-6  py-2  m-0">
                     <li>
                       <p><b>Name:</b> <a target="_blank" rel="noreferrer" href="https://github.com/Fahad-CSE16/Medical-Store-Management-System-django">Medical Store Management System</a> </p>
                       <p className="text-justify"><b>Description:</b>Admin can add stock, update, make bill dynamically and then in the backend application will auto reduce products from the stock and give alert if any stock becomes empty.</p>

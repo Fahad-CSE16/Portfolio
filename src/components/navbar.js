@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const navbar = () => {
     return (
         
-            <div className="navbar menu navbar-dark bg-none mb-5 navbar-expand-md fixed-top"  style={{
+            <div className="navbar menu navbar-dark bg-none mb-5 navbar-expand-sm fixed-top"  style={{
                 background: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('/media/bg.jpg')",
                 backgroundSize: "cover",
                 backgroundAttachment: "fixed",

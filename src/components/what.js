@@ -6,14 +6,14 @@ const what = () => {
             <h2 className="text-primary pt-5">Services</h2>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-4 ">
+                    <div className="col-md-4   col-sm-12 col-xs-12 col-lg-4 col-xl-4">
                         <div className="card pt-0">
                             <img className="cardFooter" alt="fahad" src="/media/python.png" width="50px" />
                             <img className="cardFooter ml-2" alt="fahad" src="/media/laravel.png" width="50px" />
                             <h3 className="cardTitle">Backend Developer</h3>
                             <p className="cardDesc">I am a professional Django Developer. I have experience in building website's backend using python framework DJango. I have completeted several Projects using django.</p>
                         </div></div>
-                    <div className="col-md-4 ">
+                    <div className="col-md-4  col-sm-12 col-xs-12 ">
                         <div className="card pt-0">
                             <img className="cardFooter" alt="fahad" src="/media/react2.png" width="50px" />
                             <img className="cardFooter" alt="fahad" src="/media/vue.png" width="50px" />
