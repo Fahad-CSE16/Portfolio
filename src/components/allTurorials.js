@@ -64,11 +64,7 @@ const allTurorials = () => {
                 <h4 className="text-center text-white">Playlist: Django Basic-Advance</h4>
                 <iframe width="420" height="315" src="https://www.youtube.com/embed/videoseries?list=PL4NIq30KvXLDf3a3DQXZyGv_BNYRYTXJS" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 
-            </div>
-            
-
-           
-                
+            </div>    
             </div>
         </div>
         
