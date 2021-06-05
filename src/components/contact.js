@@ -3,16 +3,19 @@ import axios from 'axios';
 
 import DjangoCSRFToken from 'django-react-csrftoken';
 import { domain } from '../env';
+import { withRouter } from 'react-router-dom';
 import { Redirect } from 'react-router';
 axios.defaults.xsrfCookieName='csrftoken';
 axios.defaults.xsrfHeaderName='X-CSRFToken';
+
 class contact extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state={
             name:"",
             email:"",
             message:"",
+            redirectToReferrer: false
         }
     }
     changeNow=(event)=>{
@@ -20,16 +23,31 @@ class contact extends Component {
         var inputValue= event.target.value;
         this.setState({[inputField]:inputValue});
     }
-    connection =() => {
-        axios.post("http://fahadsworld.herokuapp.com/api/contacts/",{
-              name: this.state.name,
-              email: this.state.email,
-              message: this.state.message
-          })
-          .then(res => console.log(res))
-          .catch(res => console.log(res))
+    connection =async() => {
+        
+        await axios({
+                url: `${domain}/api/contacts/`,
+                // url: "https://fahadsworld.herokuapp.com/api/contacts/",
+                method: 'POST',
+                data: {
+                    'name':this.state.name,
+                    'email': this.state.email,
+                    'message': this.state.message,
+
+                }
+            }).then(response => {
+                console.log('Messages====', response.data);
+                
+                    alert(response.data['response']);
+                this.props.history.push("/")
+
+
+                    
+                })
+               
         }
     render() {
+        
         return (
             <div>
                  <div style={{
@@ -81,4 +99,4 @@ class contact extends Component {
     }
 }
 
-export default contact;
+export default withRouter(contact);
