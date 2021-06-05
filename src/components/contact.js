@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import DjangoCSRFToken from 'django-react-csrftoken';
-import { domain } from '../env';
+import { domain, domain1 } from '../env';
 import { withRouter } from 'react-router-dom';
-import { Redirect } from 'react-router';
 axios.defaults.xsrfCookieName='csrftoken';
 axios.defaults.xsrfHeaderName='X-CSRFToken';
 
@@ -15,7 +14,6 @@ class contact extends Component {
             name:"",
             email:"",
             message:"",
-            redirectToReferrer: false
         }
     }
     changeNow=(event)=>{
@@ -26,7 +24,8 @@ class contact extends Component {
     connection =async() => {
         
         await axios({
-                url: `${domain}/api/contacts/`,
+                // url: `${domain}/api/contacts/`,
+                url: `${domain1}/api/contacts/`,
                 // url: "https://fahadsworld.herokuapp.com/api/contacts/",
                 method: 'POST',
                 data: {
@@ -37,7 +36,8 @@ class contact extends Component {
                 }
             }).then(response => {
                 console.log('Messages====', response.data);
-                
+                console.log(domain1);
+                console.log(domain);
                     alert(response.data['response']);
                 this.props.history.push("/")
 
@@ -50,26 +50,16 @@ class contact extends Component {
         
         return (
             <div>
-                 <div style={{
-            
-            paddingTop:"100px",
-            paddingBottom:"100px",
-
-            
-        }} >
+                 <div style={{paddingTop:"100px",paddingBottom:"100px",}} >
             <h2 className="text-white text-center  mb-5">Contact With Me</h2>
             <div className="container">
-
-          
             <form  method="post" encType="text/plain" >
-            {/* <form action="mailto:fahad.hstu16@gmail.com" method="post" encType="text/plain"> */}
             <DjangoCSRFToken/>
             <div class="row m-0" >
                 <div class="col-lg-6 col-md-6 col-sm-12 text-white">
                     <div class="form-group text-left">
                         <label for="name">Name</label>
                         <input required type="text"  style={{background:"none"}} name="name" className="form-control  text-white" placeholder="Enter your name here"  onChange={this.changeNow} />
-                        
                     </div>
                     <div class="form-group text-left">
                         <label for="email">Email address</label>
