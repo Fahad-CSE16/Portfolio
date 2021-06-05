@@ -20,28 +20,14 @@ class contact extends Component {
         var inputValue= event.target.value;
         this.setState({[inputField]:inputValue});
     }
-    connection =async() => {
-        
-        await axios({
-                url: `${domain}/api/contacts/`,
-                method: 'POST',
-                data: {
-                    'name':this.state.name,
-                    'email': this.state.email,
-                    'message': this.state.message,
-
-                }
-            }).then(response => {
-                console.log('Messages====', response.data);
-                
-                    alert(response.data['response']);
-                <Redirect to="/aboutme/"/>
-
-                    
-                })
-                this.state.name=" ";
-                this.state.email=" ";
-                this.state.message=" ";
+    connection =() => {
+        axios.post("http://fahadsworld.herokuapp.com/api/contacts/",{
+              name: this.state.name,
+              email: this.state.email,
+              message: this.state.message
+          })
+          .then(res => console.log(res))
+          .catch(res => console.log(res))
         }
     render() {
         return (
