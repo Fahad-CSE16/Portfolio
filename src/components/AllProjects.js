@@ -39,9 +39,17 @@ class AllProjects extends Component {
                             {posts.map(post => <div key={post.id} className="col-md-8 offset-md-2 py-2 ">
                                 <li>
                                     <h3><b>Name:</b> <a target="_blank" rel="noreferrer" href={post.urls}>{post.name}</a> </h3>
-                                    <p className="text-justify"><b>Description:</b>
-                                    {post.description} 
+                                    
+                                    <div className="text-justify"><b>Description:</b>
+                                    <div dangerouslySetInnerHTML={{ __html: post.description }} />
+                                    </div>
+                                    <p className="text-justify"><b>Tools: </b>
+                                    {post.tools} 
                                     </p>
+                                    <p className="text-justify"><b>Contribution: </b>
+                                    {post.contribution} 
+                                    </p>
+
                                 </li>
                             </div>)}
                         </ol>
