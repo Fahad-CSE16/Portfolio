@@ -3,11 +3,7 @@ import React, { Component } from 'react';
 class proDetails extends Component {
     render() {
         return (
-            <div id="project" style={{
-
-                paddingTop: "50px"
-
-            }}>
+            <div id="project" style={{paddingTop: "50px"}}>
                 <h1 className="pt-5 text-white text-center m-0">Project Works</h1>
                 <div className="pt-2 text-white text-left " >
                     <ol className="row m-0">
