@@ -38,13 +38,9 @@ class contact extends Component {
                 console.log('Messages====', response.data);
                 console.log(domain1);
                 console.log(domain);
-                    alert(response.data['response']);
-                this.props.history.push("/")
-
-
-                    
-                })
-               
+                alert(response.data['response']);
+                this.props.history.push("/")    
+                })     
         }
     render() {
         

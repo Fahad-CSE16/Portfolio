@@ -24,8 +24,11 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
     'contacts',
+    'ckeditor',
+    'ckeditor_uploader',
+    
 ]
-
+CKEDITOR_UPLOAD_PATH='uploads/'
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
